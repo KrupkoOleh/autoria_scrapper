@@ -3,3 +3,7 @@ aiohttp==3.13.2
 psycopg2==2.9.11
 python-dotenv==1.0.1
 flake8==7.3.0
+SQLAlchemy==2.0.36
+alembic==1.14.0
+pydantic==2.12.5
+asyncpg==0.31.0
