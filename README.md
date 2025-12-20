@@ -8,6 +8,7 @@ The project is fully containerized using **Docker** and includes automated datab
 
 * **Language:** Python 3.11
 * **Core Libs:** `aiohttp` (Async HTTP), `BeautifulSoup4` (Parsing), `SQLAlchemy` (Async ORM)
+* **Data & Visualization:** `Streamlit` (Web Dashboard), `Pandas` (Data Analysis)
 * **Database:** PostgreSQL 15
 * **Infrastructure:** Docker & Docker Compose
 * **Migrations:** Alembic
@@ -19,6 +20,12 @@ The project is fully containerized using **Docker** and includes automated datab
 * **Sold Status Tracking:** automatically detects sold cars.
 * **Check vin code:** find vin-code at the other block of page to add data.
 * **Auto Backups:** scheduled database dumps saved to the local `./dumps` folder.
+* **📊 Analytics Dashboard:**
+    * **Real-time Monitoring:** Watch new cars appear in the database instantly.
+    * **Global Statistics:** Average price, mileage, and total car count across the entire market.
+    * **Dynamic Filtering:** Filter data by price range, brand, or date.
+    * **Brand Analysis:** Deep dive into specific brands with Price vs. Odometer charts and price distribution histograms.
+    * **Photo Gallery:** View car images directly in the data table.
 
 ---
 
@@ -34,3 +41,6 @@ cd autoria_scrapper
 ```bash
 docker-compose up -d --build
 ```
+
+### 3. Go to the website
+http://localhost:8501
