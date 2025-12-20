@@ -10,3 +10,6 @@ asyncpg==0.31.0
 greenlet==3.3.0
 ipdb
 requests
+streamlit==1.52.2
+pandas==2.3.3
+
