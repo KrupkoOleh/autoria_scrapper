@@ -40,6 +40,23 @@ services:
 
     env_file:
       - .env
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.streamlit
+    ports:
+      - "8501:8501"
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_USER=${DB_USER}
+      - DB_PASS=${DB_PASS}
+      - DB_NAME=${DB_NAME}
+    depends_on:
+      - db
+    volumes:
+      - ./dashboard.py:/app/dashboard.py
+      - ./src:/app/src
 
 volumes:
   postgres_data:
